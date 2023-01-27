@@ -610,6 +610,7 @@ use the :class:`Symfony\\Bundle\\SecurityBundle\\Security` service::
 
     class ExampleService
     {
+        private RequestStack $requestStack;
         private Security $security;
 
         public function __construct(Security $security, RequestStack $requestStack)
